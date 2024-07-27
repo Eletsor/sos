@@ -30,7 +30,7 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 21px;
+    height: 144px;
     
 }
 
@@ -51,6 +51,30 @@ header{
     padding: 0;
 }
 
+/*выпадающее меню*/
+
+#lang{
+    background: none;
+    -webkit-appearance: menulist-button;
+    color: white;
+    margin-top: 5px;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 700;
+}
+
+#lang option{
+    background-color: #000000BF;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 700;
+    
+}
+
+
+  select:invalid {
+    color: green;
+  }
+
+
 .logo a img{
     width: 54px;
 }
@@ -58,6 +82,7 @@ header{
 .menu-ul{
     display: flex;
 }
+
 
 
 .menu-svg img:last-child{
@@ -72,4 +97,55 @@ header{
 
 .svg-img{
     padding-left: 60px;
+}
+
+.mid-text{
+    margin-top: 168px;
+    align-items: center;
+}
+
+.mid-text h1{
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 700;
+    font-size: 80px;
+    color: #FFFFFF;
+    line-height: 80px;
+    letter-spacing: 3px;
+}
+
+.mid-text h3{
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 24px;
+    letter-spacing: 2px;
+    color: #FFFFFF;
+}
+
+.mid-btn{
+    margin-top: 28px;
+    width: 260px;
+    height: 60px;
+    background:  linear-gradient(217deg,rgba(255, 181, 72, 1), rgba(243, 175, 52, 1) 70.71%);
+    border-radius: 5px;
+    border-color: rgba(26, 25, 23, 1);
+    border-width: thin;
+    text-align: center;
+    cursor: pointer;
+    
+}
+
+.mid-btn span{
+    font-family: "Open Sans", sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 21.79px;
+    color: rgba(26, 25, 23, 1);
+    float: left;
+    padding-left: 18px;
+    
+}
+
+.mid-btn span{
+    
 }

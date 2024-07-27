@@ -31,16 +31,38 @@
                 </div>
                 
                 <div class="menu-svg">
-                    <div class="div">
-                        <ul>
-                           <li class="header-li"><a href="">ENG</a></li> 
-                        </ul>
-                    </div>
+                    <select name="lang" id="lang">
+                        <option value="/">ENG</option>
+                        <option class="eng" value="/en/main">RUS</option>
+                        <option class="eng" value="/en/main">FRA</option>
+                    </select>
+                    
+                    <script>
+                    $(document).ready(function () {
+                      var lang = document.getElementById("lang");
+                      lang.onchange = function () {
+                        window.location =
+                          "https://studyintomsk.ru" +
+                          lang.options[lang.options.selectedIndex].value;
+                      };
+                    });
+                    </script>
                     <div class="svg-img">
                         <a href=""><img src="img/xboxicon.svg" alt=""></a>
                         <a href=""><img src="img/steamicon.svg" alt=""></a>
                     </div>
                 </div>
+            </div>
+            <div class="mid-text">
+                <h1>SURVIVE AT ALL COSTS</h1>
+                <h3>Experience new social battle royale game</h3>
+                <form action="#">
+                    <button class="mid-btn" onclick="">
+                        <span>Buy Now on Steam</span>
+                        <span>$14.99</span>
+                    </button>
+                </form>
+                
             </div>
         </div>
     </header>
