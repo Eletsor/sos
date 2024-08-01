@@ -7,7 +7,8 @@ body{
     height: 100%;
     font-family: "Bebas Neue", sans-serif;
     font-family: "Open Sans", sans-serif;
-    color: black;
+    color: rgb(29, 27, 27);
+    background-color: rgb(20, 20, 20);
 }
 .container{
     max-width: 1156px;
@@ -17,7 +18,7 @@ body{
 
 header{
     background-image: url(img/bgimage.jpg);
-    height: 100vh;
+    min-height: 960px;
     background-repeat: no-repeat;
     background-size: cover;
     margin: 0px;
@@ -30,13 +31,13 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 144px;
+    height: 120px;
     
 }
 
 .header-li{
     float: right;
-    padding-left: 35px;
+    padding-left: 50px;
 
 }
 
@@ -48,7 +49,7 @@ header{
 }
 
 .header-li:first-child{
-    padding: 0;
+    
 }
 
 /*выпадающее меню*/
@@ -57,7 +58,7 @@ header{
     background: none;
     -webkit-appearance: menulist-button;
     color: white;
-    margin-top: 5px;
+    
     font-family: "Open Sans", sans-serif;
     font-weight: 700;
 }
@@ -96,11 +97,11 @@ header{
 }
 
 .svg-img{
-    padding-left: 60px;
+    padding-left: 0px;
 }
 
 .mid-text{
-    margin-top: 168px;
+    margin-top: 192px;
     align-items: center;
 }
 
@@ -146,6 +147,57 @@ header{
     
 }
 
-.mid-btn span{
-    
+/*header arrow*/
+
+.header-arrow{
+    margin-top: 360px;
+    align-items: center;
+    cursor: pointer;
+}
+
+
+  
+.arrow-7 {
+    margin: 40px auto 10px auto;
+    width: 38px;
+    height: 100px;
+}
+.arrow-7 span {
+    display: block;
+    width: 30px;
+    height: 30px;
+    border-bottom: 5px solid #FFFFFF;
+    border-right: 5px solid #FFFFFF;
+    transform: rotate(45deg);
+    margin: -16px 0;
+    animation: arrow-7 2s infinite;
+}
+.arrow-7 span:nth-child(2){
+    animation-delay: -0.2s;
+}
+.arrow-7 span:nth-child(3){
+    animation-delay: -0.4s;
+}
+@keyframes arrow-7 {
+    0%{
+        opacity: 0;
+        transform: translate(0,-20px) rotate(45deg);
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+        transform: translate(0,20px) rotate(45deg);
+    }
+}
+
+
+.main{
+    background-image: url(img/bgimage2.png);
+    min-height: 960px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0px;
+    background-position: center;
 }
